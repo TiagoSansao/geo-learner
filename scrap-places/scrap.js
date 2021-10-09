@@ -1,8 +1,7 @@
 const fs = require("fs");
 
-console.log(__dirname);
-
 let dataToBeScrapped = fs.readFileSync(`${__dirname}/Paises_por_ordem_alfabetica.php`, "utf-8");
+
 const dataToBeScrappedInitIndex = dataToBeScrapped.indexOf("<tbody>");
 const dataToBeScrappedEndIndex = dataToBeScrapped.indexOf("</tbody>");
 
