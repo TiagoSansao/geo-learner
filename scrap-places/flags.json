@@ -1,21 +1,5 @@
 [
   {
-    "code": "AD",
-    "emoji": "🇦🇩",
-    "unicode": "U+1F1E6 U+1F1E9",
-    "name": "Andorra",
-    "title": "flag for Andorra",
-    "dialCode": "+376"
-  },
-  {
-    "code": "AE",
-    "emoji": "🇦🇪",
-    "unicode": "U+1F1E6 U+1F1EA",
-    "name": "United Arab Emirates",
-    "title": "flag for United Arab Emirates",
-    "dialCode": "+971"
-  },
-  {
     "code": "AF",
     "emoji": "🇦🇫",
     "unicode": "U+1F1E6 U+1F1EB",
@@ -24,20 +8,12 @@
     "dialCode": "+93"
   },
   {
-    "code": "AG",
-    "emoji": "🇦🇬",
-    "unicode": "U+1F1E6 U+1F1EC",
-    "name": "Antigua and Barbuda",
-    "title": "flag for Antigua and Barbuda",
-    "dialCode": "+1268"
-  },
-  {
-    "code": "AI",
-    "emoji": "🇦🇮",
-    "unicode": "U+1F1E6 U+1F1EE",
-    "name": "Anguilla",
-    "title": "flag for Anguilla",
-    "dialCode": "+1 264"
+    "code": "ZA",
+    "emoji": "🇿🇦",
+    "unicode": "U+1F1FF U+1F1E6",
+    "name": "South Africa",
+    "title": "flag for South Africa",
+    "dialCode": "+27"
   },
   {
     "code": "AL",
@@ -48,12 +24,20 @@
     "dialCode": "+355"
   },
   {
-    "code": "AM",
-    "emoji": "🇦🇲",
-    "unicode": "U+1F1E6 U+1F1F2",
-    "name": "Armenia",
-    "title": "flag for Armenia",
-    "dialCode": "+374"
+    "code": "DE",
+    "emoji": "🇩🇪",
+    "unicode": "U+1F1E9 U+1F1EA",
+    "name": "Germany",
+    "title": "flag for Germany",
+    "dialCode": "+49"
+  },
+  {
+    "code": "AD",
+    "emoji": "🇦🇩",
+    "unicode": "U+1F1E6 U+1F1E9",
+    "name": "Andorra",
+    "title": "flag for Andorra",
+    "dialCode": "+376"
   },
   {
     "code": "AO",
@@ -64,12 +48,28 @@
     "dialCode": "+244"
   },
   {
-    "code": "AQ",
-    "emoji": "🇦🇶",
-    "unicode": "U+1F1E6 U+1F1F6",
-    "name": "Antarctica",
-    "title": "flag for Antarctica",
-    "dialCode": null
+    "code": "AG",
+    "emoji": "🇦🇬",
+    "unicode": "U+1F1E6 U+1F1EC",
+    "name": "Antigua and Barbuda",
+    "title": "flag for Antigua and Barbuda",
+    "dialCode": "+1268"
+  },
+  {
+    "code": "SA",
+    "emoji": "🇸🇦",
+    "unicode": "U+1F1F8 U+1F1E6",
+    "name": "Saudi Arabia",
+    "title": "flag for Saudi Arabia",
+    "dialCode": "+966"
+  },
+  {
+    "code": "DZ",
+    "emoji": "🇩🇿",
+    "unicode": "U+1F1E9 U+1F1FF",
+    "name": "Algeria",
+    "title": "flag for Algeria",
+    "dialCode": "+213"
   },
   {
     "code": "AR",
@@ -80,12 +80,20 @@
     "dialCode": "+54"
   },
   {
-    "code": "AS",
-    "emoji": "🇦🇸",
-    "unicode": "U+1F1E6 U+1F1F8",
-    "name": "American Samoa",
-    "title": "flag for American Samoa",
-    "dialCode": "+1 684"
+    "code": "AM",
+    "emoji": "🇦🇲",
+    "unicode": "U+1F1E6 U+1F1F2",
+    "name": "Armenia",
+    "title": "flag for Armenia",
+    "dialCode": "+374"
+  },
+  {
+    "code": "AU",
+    "emoji": "🇦🇺",
+    "unicode": "U+1F1E6 U+1F1FA",
+    "name": "Australia",
+    "title": "flag for Australia",
+    "dialCode": "+61"
   },
   {
     "code": "AT",
@@ -96,12 +104,188 @@
     "dialCode": "+43"
   },
   {
-    "code": "AU",
-    "emoji": "🇦🇺",
-    "unicode": "U+1F1E6 U+1F1FA",
-    "name": "Australia",
-    "title": "flag for Australia",
-    "dialCode": "+61"
+    "code": "AZ",
+    "emoji": "🇦🇿",
+    "unicode": "U+1F1E6 U+1F1FF",
+    "name": "Azerbaijan",
+    "title": "flag for Azerbaijan",
+    "dialCode": "+994"
+  },
+  {
+    "code": "BS",
+    "emoji": "🇧🇸",
+    "unicode": "U+1F1E7 U+1F1F8",
+    "name": "Bahamas",
+    "title": "flag for Bahamas",
+    "dialCode": "+1 242"
+  },
+  {
+    "code": "BD",
+    "emoji": "🇧🇩",
+    "unicode": "U+1F1E7 U+1F1E9",
+    "name": "Bangladesh",
+    "title": "flag for Bangladesh",
+    "dialCode": "+880"
+  },
+  {
+    "code": "BB",
+    "emoji": "🇧🇧",
+    "unicode": "U+1F1E7 U+1F1E7",
+    "name": "Barbados",
+    "title": "flag for Barbados",
+    "dialCode": "+1 246"
+  },
+  {
+    "code": "BH",
+    "emoji": "🇧🇭",
+    "unicode": "U+1F1E7 U+1F1ED",
+    "name": "Bahrain",
+    "title": "flag for Bahrain",
+    "dialCode": "+973"
+  },
+  {
+    "code": "BE",
+    "emoji": "🇧🇪",
+    "unicode": "U+1F1E7 U+1F1EA",
+    "name": "Belgium",
+    "title": "flag for Belgium",
+    "dialCode": "+32"
+  },
+  {
+    "code": "BZ",
+    "emoji": "🇧🇿",
+    "unicode": "U+1F1E7 U+1F1FF",
+    "name": "Belize",
+    "title": "flag for Belize",
+    "dialCode": "+501"
+  },
+  {
+    "code": "BJ",
+    "emoji": "🇧🇯",
+    "unicode": "U+1F1E7 U+1F1EF",
+    "name": "Benin",
+    "title": "flag for Benin",
+    "dialCode": "+229"
+  },
+  {
+    "code": "BY",
+    "emoji": "🇧🇾",
+    "unicode": "U+1F1E7 U+1F1FE",
+    "name": "Belarus",
+    "title": "flag for Belarus",
+    "dialCode": "+375"
+  },
+  {
+    "code": "BO",
+    "emoji": "🇧🇴",
+    "unicode": "U+1F1E7 U+1F1F4",
+    "name": "Bolivia",
+    "title": "flag for Bolivia",
+    "dialCode": "+591"
+  },
+  {
+    "code": "BA",
+    "emoji": "🇧🇦",
+    "unicode": "U+1F1E7 U+1F1E6",
+    "name": "Bosnia and Herzegovina",
+    "title": "flag for Bosnia and Herzegovina",
+    "dialCode": "+387"
+  },
+  {
+    "code": "BW",
+    "emoji": "🇧🇼",
+    "unicode": "U+1F1E7 U+1F1FC",
+    "name": "Botswana",
+    "title": "flag for Botswana",
+    "dialCode": "+267"
+  },
+  {
+    "code": "BR",
+    "emoji": "🇧🇷",
+    "unicode": "U+1F1E7 U+1F1F7",
+    "name": "Brazil",
+    "title": "flag for Brazil",
+    "dialCode": "+55"
+  },
+  {
+    "code": "BN",
+    "emoji": "🇧🇳",
+    "unicode": "U+1F1E7 U+1F1F3",
+    "name": "Brunei Darussalam",
+    "title": "flag for Brunei Darussalam",
+    "dialCode": "+673"
+  },
+  {
+    "code": "BG",
+    "emoji": "🇧🇬",
+    "unicode": "U+1F1E7 U+1F1EC",
+    "name": "Bulgaria",
+    "title": "flag for Bulgaria",
+    "dialCode": "+359"
+  },
+  {
+    "code": "BF",
+    "emoji": "🇧🇫",
+    "unicode": "U+1F1E7 U+1F1EB",
+    "name": "Burkina Faso",
+    "title": "flag for Burkina Faso",
+    "dialCode": "+226"
+  },
+  {
+    "code": "BI",
+    "emoji": "🇧🇮",
+    "unicode": "U+1F1E7 U+1F1EE",
+    "name": "Burundi",
+    "title": "flag for Burundi",
+    "dialCode": "+257"
+  },
+  {
+    "code": "BT",
+    "emoji": "🇧🇹",
+    "unicode": "U+1F1E7 U+1F1F9",
+    "name": "Bhutan",
+    "title": "flag for Bhutan",
+    "dialCode": "+975"
+  },
+  {
+    "code": "CV",
+    "emoji": "🇨🇻",
+    "unicode": "U+1F1E8 U+1F1FB",
+    "name": "Cape Verde",
+    "title": "flag for Cape Verde",
+    "dialCode": "+238"
+  },
+  {
+    "code": "AE",
+    "emoji": "🇦🇪",
+    "unicode": "U+1F1E6 U+1F1EA",
+    "name": "United Arab Emirates",
+    "title": "flag for United Arab Emirates",
+    "dialCode": "+971"
+  },
+  {
+    "code": "AI",
+    "emoji": "🇦🇮",
+    "unicode": "U+1F1E6 U+1F1EE",
+    "name": "Anguilla",
+    "title": "flag for Anguilla",
+    "dialCode": "+1 264"
+  },
+  {
+    "code": "AQ",
+    "emoji": "🇦🇶",
+    "unicode": "U+1F1E6 U+1F1F6",
+    "name": "Antarctica",
+    "title": "flag for Antarctica",
+    "dialCode": null
+  },
+  {
+    "code": "AS",
+    "emoji": "🇦🇸",
+    "unicode": "U+1F1E6 U+1F1F8",
+    "name": "American Samoa",
+    "title": "flag for American Samoa",
+    "dialCode": "+1 684"
   },
   {
     "code": "AW",
@@ -120,86 +304,6 @@
     "dialCode": ""
   },
   {
-    "code": "AZ",
-    "emoji": "🇦🇿",
-    "unicode": "U+1F1E6 U+1F1FF",
-    "name": "Azerbaijan",
-    "title": "flag for Azerbaijan",
-    "dialCode": "+994"
-  },
-  {
-    "code": "BA",
-    "emoji": "🇧🇦",
-    "unicode": "U+1F1E7 U+1F1E6",
-    "name": "Bosnia and Herzegovina",
-    "title": "flag for Bosnia and Herzegovina",
-    "dialCode": "+387"
-  },
-  {
-    "code": "BB",
-    "emoji": "🇧🇧",
-    "unicode": "U+1F1E7 U+1F1E7",
-    "name": "Barbados",
-    "title": "flag for Barbados",
-    "dialCode": "+1 246"
-  },
-  {
-    "code": "BD",
-    "emoji": "🇧🇩",
-    "unicode": "U+1F1E7 U+1F1E9",
-    "name": "Bangladesh",
-    "title": "flag for Bangladesh",
-    "dialCode": "+880"
-  },
-  {
-    "code": "BE",
-    "emoji": "🇧🇪",
-    "unicode": "U+1F1E7 U+1F1EA",
-    "name": "Belgium",
-    "title": "flag for Belgium",
-    "dialCode": "+32"
-  },
-  {
-    "code": "BF",
-    "emoji": "🇧🇫",
-    "unicode": "U+1F1E7 U+1F1EB",
-    "name": "Burkina Faso",
-    "title": "flag for Burkina Faso",
-    "dialCode": "+226"
-  },
-  {
-    "code": "BG",
-    "emoji": "🇧🇬",
-    "unicode": "U+1F1E7 U+1F1EC",
-    "name": "Bulgaria",
-    "title": "flag for Bulgaria",
-    "dialCode": "+359"
-  },
-  {
-    "code": "BH",
-    "emoji": "🇧🇭",
-    "unicode": "U+1F1E7 U+1F1ED",
-    "name": "Bahrain",
-    "title": "flag for Bahrain",
-    "dialCode": "+973"
-  },
-  {
-    "code": "BI",
-    "emoji": "🇧🇮",
-    "unicode": "U+1F1E7 U+1F1EE",
-    "name": "Burundi",
-    "title": "flag for Burundi",
-    "dialCode": "+257"
-  },
-  {
-    "code": "BJ",
-    "emoji": "🇧🇯",
-    "unicode": "U+1F1E7 U+1F1EF",
-    "name": "Benin",
-    "title": "flag for Benin",
-    "dialCode": "+229"
-  },
-  {
     "code": "BL",
     "emoji": "🇧🇱",
     "unicode": "U+1F1E7 U+1F1F1",
@@ -216,22 +320,6 @@
     "dialCode": "+1 441"
   },
   {
-    "code": "BN",
-    "emoji": "🇧🇳",
-    "unicode": "U+1F1E7 U+1F1F3",
-    "name": "Brunei Darussalam",
-    "title": "flag for Brunei Darussalam",
-    "dialCode": "+673"
-  },
-  {
-    "code": "BO",
-    "emoji": "🇧🇴",
-    "unicode": "U+1F1E7 U+1F1F4",
-    "name": "Bolivia",
-    "title": "flag for Bolivia",
-    "dialCode": "+591"
-  },
-  {
     "code": "BQ",
     "emoji": "🇧🇶",
     "unicode": "U+1F1E7 U+1F1F6",
@@ -239,59 +327,11 @@
     "title": "flag for Bonaire, Sint Eustatius and Saba"
   },
   {
-    "code": "BR",
-    "emoji": "🇧🇷",
-    "unicode": "U+1F1E7 U+1F1F7",
-    "name": "Brazil",
-    "title": "flag for Brazil",
-    "dialCode": "+55"
-  },
-  {
-    "code": "BS",
-    "emoji": "🇧🇸",
-    "unicode": "U+1F1E7 U+1F1F8",
-    "name": "Bahamas",
-    "title": "flag for Bahamas",
-    "dialCode": "+1 242"
-  },
-  {
-    "code": "BT",
-    "emoji": "🇧🇹",
-    "unicode": "U+1F1E7 U+1F1F9",
-    "name": "Bhutan",
-    "title": "flag for Bhutan",
-    "dialCode": "+975"
-  },
-  {
     "code": "BV",
     "emoji": "🇧🇻",
     "unicode": "U+1F1E7 U+1F1FB",
     "name": "Bouvet Island",
     "title": "flag for Bouvet Island"
-  },
-  {
-    "code": "BW",
-    "emoji": "🇧🇼",
-    "unicode": "U+1F1E7 U+1F1FC",
-    "name": "Botswana",
-    "title": "flag for Botswana",
-    "dialCode": "+267"
-  },
-  {
-    "code": "BY",
-    "emoji": "🇧🇾",
-    "unicode": "U+1F1E7 U+1F1FE",
-    "name": "Belarus",
-    "title": "flag for Belarus",
-    "dialCode": "+375"
-  },
-  {
-    "code": "BZ",
-    "emoji": "🇧🇿",
-    "unicode": "U+1F1E7 U+1F1FF",
-    "name": "Belize",
-    "title": "flag for Belize",
-    "dialCode": "+501"
   },
   {
     "code": "CA",
@@ -406,14 +446,6 @@
     "dialCode": "+53"
   },
   {
-    "code": "CV",
-    "emoji": "🇨🇻",
-    "unicode": "U+1F1E8 U+1F1FB",
-    "name": "Cape Verde",
-    "title": "flag for Cape Verde",
-    "dialCode": "+238"
-  },
-  {
     "code": "CW",
     "emoji": "🇨🇼",
     "unicode": "U+1F1E8 U+1F1FC",
@@ -443,14 +475,6 @@
     "name": "Czech Republic",
     "title": "flag for Czech Republic",
     "dialCode": "+420"
-  },
-  {
-    "code": "DE",
-    "emoji": "🇩🇪",
-    "unicode": "U+1F1E9 U+1F1EA",
-    "name": "Germany",
-    "title": "flag for Germany",
-    "dialCode": "+49"
   },
   {
     "code": "DJ",
@@ -483,14 +507,6 @@
     "name": "Dominican Republic",
     "title": "flag for Dominican Republic",
     "dialCode": "+1 849"
-  },
-  {
-    "code": "DZ",
-    "emoji": "🇩🇿",
-    "unicode": "U+1F1E9 U+1F1FF",
-    "name": "Algeria",
-    "title": "flag for Algeria",
-    "dialCode": "+213"
   },
   {
     "code": "EC",
@@ -1538,14 +1554,6 @@
     "dialCode": "+250"
   },
   {
-    "code": "SA",
-    "emoji": "🇸🇦",
-    "unicode": "U+1F1F8 U+1F1E6",
-    "name": "Saudi Arabia",
-    "title": "flag for Saudi Arabia",
-    "dialCode": "+966"
-  },
-  {
     "code": "SB",
     "emoji": "🇸🇧",
     "unicode": "U+1F1F8 U+1F1E7",
@@ -1972,14 +1980,6 @@
     "name": "Mayotte",
     "title": "flag for Mayotte",
     "dialCode": "+262"
-  },
-  {
-    "code": "ZA",
-    "emoji": "🇿🇦",
-    "unicode": "U+1F1FF U+1F1E6",
-    "name": "South Africa",
-    "title": "flag for South Africa",
-    "dialCode": "+27"
   },
   {
     "code": "ZM",
