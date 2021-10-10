@@ -51,22 +51,26 @@ def start():
 def startMode(mode: int):
     country = random.randrange(0, len(data) - 1)
     countryData = data[country]
+
     os.system("cls|clear")
     print("{d}Qual é a capital do país {b}{c}{country}{rmb}{d} situado na {continent}?".format(
         continent=countryData["continent"], country=countryData["name"], c=colors.LightCyan, d=colors.Cyan, b=colors.Bold, rmb=colors.ResetAll)
     )
+
     answer = str(input(f"{colors.Yellow}Sua resposta: {colors.White}"))
     isCorrect = str.lower(answer) == str.lower(data[country]["capital"])
     state = colors.Green + \
         "[Correto] " if isCorrect else colors.Red + "[Errado] "
+
     print("\n" + state + colors.Green +
           "{capital}".format(capital=countryData["capital"]) + "\n")
     print(f"{colors.Magenta}[C]{colors.Blue}      para trocar de modo")
     print(f"{colors.Magenta}[X]{colors.Blue}      para sair")
     print(
         f"{colors.Magenta}[ENTER]{colors.Blue}  para continuar no modo")
-    willContinue = str.lower(
-        str(input()))
+
+    willContinue = str.lower(str(input()))
+
     if willContinue == "c":
         start()
     elif willContinue == "x":
