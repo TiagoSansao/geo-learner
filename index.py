@@ -1,6 +1,7 @@
 import json
 import random
 import os
+import time
 
 mode: int
 data = json.load(open("data.json", "r"))
@@ -30,20 +31,19 @@ class colors:
 
 def start():
     os.system("cls|clear")
-    print(f"{colors.Cyan}Qual continente você deseja jogar?")
+    print(f"{colors.Cyan}Em qual continente você deseja jogar?")
     print(f"{colors.Magenta}[1]{colors.Blue} Todos")
     print(f"{colors.Magenta}[2]{colors.Blue} América")
     print(f"{colors.Magenta}[3]{colors.Blue} Europa")
     print(f"{colors.Magenta}[4]{colors.Blue} África")
     print(f"{colors.Magenta}[5]{colors.Blue} Ásia")
     print(f"{colors.Magenta}[6]{colors.Blue} Oceania")
-    mode = int(input(f"{colors.Yellow}Resposta: {colors.White}"))
-    os.system("cls|clear")
-    if mode <= 0 and mode > 6:
-        print(
-            "Valor: {value} não é válido, insira: 1, 2 ou 3!".format(
-                value=mode)
-        )
+    try:
+        mode = int(input(f"{colors.Yellow}Resposta: {colors.White}"))
+        os.system("cls|clear")
+        if mode not in range(1, 7):
+            return start()
+    except:
         return start()
     startMode(mode)
 
