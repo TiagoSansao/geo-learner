@@ -95,7 +95,8 @@ def startMode(mode: int):
     )
 
     answer = str(input(f"{colors.Yellow}Sua resposta: {colors.White}"))
-    isCorrect = str.lower(answer) == str.lower(data[country]["capital"])
+    isCorrect = str.lower(answer).strip() == str.lower(
+        countryData["capital"]).strip()
     state = colors.Green + \
         "[Correto] " if isCorrect else colors.Red + "[Errado] "
 
