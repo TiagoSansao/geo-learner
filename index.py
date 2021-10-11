@@ -1,10 +1,30 @@
 import json
 import random
 import os
-import time
 
 mode: int
 data = json.load(open("data.json", "r"))
+africa, america, europa, asia, oceania = [], [], [], [], []
+for country in data:
+    if country["continent"] == "Ásia":
+        asia.append(country)
+    elif country["continent"] == "América":
+        america.append(country)
+    elif country["continent"] == "Europa":
+        europa.append(country)
+    elif country["continent"] == "Oceania":
+        oceania.append(country)
+    elif country["continent"] == "Africa":
+        africa.append(country)
+
+
+class modesData:
+    todos = data
+    america = america
+    europa = europa
+    africa = africa
+    asia = asia
+    oceania = oceania
 
 
 class colors:
@@ -49,10 +69,27 @@ def start():
 
 
 def startMode(mode: int):
-    country = random.randrange(0, len(data) - 1)
-    countryData = data[country]
+    if (mode == 1):
+        country = random.randrange(0, len(modesData.todos) - 1)
+        countryData = modesData.todos[country]
+    elif (mode == 2):
+        country = random.randrange(0, len(modesData.america) - 1)
+        countryData = modesData.america[country]
+    elif (mode == 3):
+        country = random.randrange(0, len(modesData.europa) - 1)
+        countryData = modesData.europa[country]
+    elif (mode == 4):
+        country = random.randrange(0, len(modesData.africa) - 1)
+        countryData = modesData.africa[country]
+    elif (mode == 5):
+        country = random.randrange(0, len(modesData.asia) - 1)
+        countryData = modesData.asia[country]
+    elif (mode == 6):
+        country = random.randrange(0, len(modesData.oceania) - 1)
+        countryData = modesData.oceania[country]
 
     os.system("cls|clear")
+
     print("{d}Qual é a capital do país {b}{c}{country}{rmb}{d} situado na {continent}?".format(
         continent=countryData["continent"], country=countryData["name"], c=colors.LightCyan, d=colors.Cyan, b=colors.Bold, rmb=colors.ResetAll)
     )
