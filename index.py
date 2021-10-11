@@ -14,7 +14,7 @@ for country in data:
         europa.append(country)
     elif country["continent"] == "Oceania":
         oceania.append(country)
-    elif country["continent"] == "Africa":
+    elif country["continent"] == "África":
         africa.append(country)
 
 
