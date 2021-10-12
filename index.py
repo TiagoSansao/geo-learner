@@ -3,7 +3,7 @@ import random
 import os
 
 mode: int
-data = json.load(open("data.json", "r"))
+data = json.load(open("data.json", "r", encoding="utf"))
 africa, america, europa, asia, oceania = [], [], [], [], []
 for country in data:
     if country["continent"] == "Ásia":
