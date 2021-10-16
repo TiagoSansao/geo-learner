@@ -1,10 +1,14 @@
 import json
 import random
 import os
+from controllers.colors import colors
 
 mode: int
-data = json.load(open("data.json", "r", encoding="utf"))
 africa, america, europa, asia, oceania = [], [], [], [], []
+
+with open("data.json", "r", encoding="utf") as f:
+    data = json.load(f)
+
 for country in data:
     if country["continent"] == "Ásia":
         asia.append(country)
@@ -17,36 +21,14 @@ for country in data:
     elif country["continent"] == "África":
         africa.append(country)
 
-
-class modesData:
-    todos = data
-    america = america
-    europa = europa
-    africa = africa
-    asia = asia
-    oceania = oceania
-
-
-class colors:
-    Default = "\033[39m"
-    Black = "\033[30m"
-    Red = "\033[31m"
-    Green = "\033[32m"
-    Yellow = "\033[33m"
-    Blue = "\033[34m"
-    Magenta = "\033[35m"
-    Cyan = "\033[36m"
-    LightGray = "\033[37m"
-    DarkGray = "\033[90m"
-    LightRed = "\033[91m"
-    LightGreen = "\033[92m"
-    LightYellow = "\033[93m"
-    LightBlue = "\033[94m"
-    LightMagenta = "\033[95m"
-    LightCyan = "\033[96m"
-    White = "\033[97m"
-    ResetAll = "\033[0m"
-    Bold = "\033[1m"
+modesData: dict = {
+    "1": data,
+    "2": america,
+    "3": europa,
+    "4": africa,
+    "4": oceania,
+    "5": asia
+}
 
 
 def start():
@@ -69,24 +51,10 @@ def start():
 
 
 def startMode(mode: int):
-    if (mode == 1):
-        country = random.randrange(0, len(modesData.todos) - 1)
-        countryData = modesData.todos[country]
-    elif (mode == 2):
-        country = random.randrange(0, len(modesData.america) - 1)
-        countryData = modesData.america[country]
-    elif (mode == 3):
-        country = random.randrange(0, len(modesData.europa) - 1)
-        countryData = modesData.europa[country]
-    elif (mode == 4):
-        country = random.randrange(0, len(modesData.africa) - 1)
-        countryData = modesData.africa[country]
-    elif (mode == 5):
-        country = random.randrange(0, len(modesData.asia) - 1)
-        countryData = modesData.asia[country]
-    elif (mode == 6):
-        country = random.randrange(0, len(modesData.oceania) - 1)
-        countryData = modesData.oceania[country]
+    for modeStr in modesData:
+        if str(mode) == modeStr:
+            country = random.randrange(0, len(modesData[modeStr]) - 1)
+            countryData = modesData[modeStr][country]
 
     os.system("cls|clear")
 
