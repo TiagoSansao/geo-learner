@@ -4,6 +4,12 @@ import os
 from typing import List, Dict
 from controllers.colors import colors
 
+__author__ = "Tiago Sansão"
+__maintainer__ = "Tiago Sansão"
+__github__ = "https://github.com/TiagoSansao/geo-learner"
+__version__ = "1.0.0"
+__contact__ = "tiagossansao@gmail.com"
+
 mode: int
 africa, america, europa, asia, oceania = [], [], [], [], []
 
