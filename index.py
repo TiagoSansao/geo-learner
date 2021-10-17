@@ -69,7 +69,7 @@ def startMode(mode: int):
     os.system("cls|clear")
 
     print(
-        f"{colors.Cyan}Qual é a capital do país {colors.Bold}{colors.LightCyan}{countryData['name']}{colors.ResetAll}{colors.Bold} situado na {countryData['continent']}?"
+        f"{colors.Cyan}Qual é a capital do país {colors.Bold}{colors.LightCyan}{countryData['name']}{colors.ResetAll}{colors.Cyan} situado na {countryData['continent']}?"
     )
 
     answer: str = str(input(f"{colors.Yellow}Sua resposta: {colors.White}"))
