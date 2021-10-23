@@ -13,8 +13,17 @@ __contact__ = "tiagossansao@gmail.com"
 mode: int
 africa, america, europa, asia, oceania = [], [], [], [], []
 
-with open("data.json", "r", encoding="utf") as f:
-    data: List[Dict[str, str]] = json.load(f)
+if not os.path.isfile("personal-data.json"):
+    with open("data.json", "r", encoding="utf") as default_data:
+        data: List[Dict[str, str]] = json.load(default_data)
+    with open("personal-data.json", "w", encoding="utf") as personal_data:
+        for country in data:
+            country["hits"] = 0
+        personal_data.write(json.dumps(data))
+else:
+    with open("personal-data.json", "r", encoding="utf") as default_data:
+        data: List[Dict[str, str]] = json.load(default_data)
+
 
 for country in data:
     if country["continent"] == "Ásia":
@@ -77,6 +86,17 @@ def startMode(mode: int):
         countryData["capital"]).strip()
     state: str = colors.Green + \
         "[Correto] " if isCorrect else colors.Red + "[Errado] "
+
+    if isCorrect:
+        with open("personal-data.json", "r") as f:
+            data = json.load(f)
+        count: int = 0
+        for country in data:
+            if country["name"] == countryData["name"]:
+                data[count]["hits"] += 1
+            count += 1
+        with open("personal-data.json", "w") as f:
+            f.write(json.dumps(data))
 
     print("\n" + state + colors.Green +
           "{capital}".format(capital=countryData["capital"]) + "\n")
