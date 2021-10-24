@@ -13,19 +13,36 @@ __contact__ = "tiagossansao@gmail.com"
 mode: int
 africa, america, europa, asia, oceania = [], [], [], [], []
 
-if not os.path.isfile("personal-data.json"):
-    with open("data.json", "r", encoding="utf") as default_data:
-        data: List[Dict[str, str]] = json.load(default_data)
-    with open("personal-data.json", "w", encoding="utf") as personal_data:
-        for country in data:
-            country["hits"] = 0
-        personal_data.write(json.dumps(data))
-else:
-    with open("personal-data.json", "r", encoding="utf") as default_data:
-        data: List[Dict[str, str]] = json.load(default_data)
+
+class PersonalData:
+    def __init__(self):
+        if not os.path.isfile("personal-data.json"):
+            data: List[Dict[str, str]] = self.getDefaultData()
+            for country in data:
+                country["hits"] = 0
+            self.set(data)
+
+    def getDefaultData(self) -> List[Dict[str, str]]:
+        with open("data.json", "r", encoding="utf") as default_data:
+            data = json.load(default_data)
+        return data
+
+    def get(self) -> List[Dict[str, str]]:
+        with open("personal-data.json", "r", encoding="utf") as personal_data:
+            data: List[Dict[str, str]] = json.load(personal_data)
+        return data
+
+    def set(self, newJsonDumped) -> None:
+        with open("personal-data.json", "w", encoding="utf") as personal_data:
+            personal_data.write(json.dumps(newJsonDumped))
 
 
-for country in data:
+# Instance of PersonalData
+personalData = PersonalData()
+
+# Organize each continent's array accordingly
+for country in personalData.get():
+    print("Country: ", country)
     if country["continent"] == "Ásia":
         asia.append(country)
     elif country["continent"] == "América":
@@ -37,8 +54,9 @@ for country in data:
     elif country["continent"] == "África":
         africa.append(country)
 
+# Dict to match user's input with the chosen mode
 modesData: Dict[str, dict] = {
-    "1": data,
+    "1": personalData.get(),
     "2": america,
     "3": europa,
     "4": africa,
@@ -70,10 +88,21 @@ def start():
 
 
 def startMode(mode: int):
+    # This block of code will set in countryData the country
+    # that the player had the lowest hits
     for modeStr in modesData:
         if str(mode) == modeStr:
             country: int = random.randrange(0, len(modesData[modeStr]) - 1)
             countryData: Dict[str, str] = modesData[modeStr][country]
+            for i in range(0, 12):
+                anotherCountry: int = random.randrange(
+                    0, len(modesData[modeStr]) - 1)
+                anotherCountryData: Dict[str,
+                                         str] = modesData[modeStr][anotherCountry]
+                if anotherCountryData["hits"] > countryData["hits"]:
+                    countryData = anotherCountryData
+                    print("new country ", countryData["name"])
+                    input()
 
     os.system("cls|clear")
 
@@ -116,4 +145,5 @@ def startMode(mode: int):
         startMode(mode)
 
 
+# Start the game after everything has been interpreted
 start()
