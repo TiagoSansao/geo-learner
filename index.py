@@ -89,7 +89,7 @@ def start():
 
 def startMode(mode: int):
     # This block of code will set in countryData the country
-    # that the player had the lowest hits
+    # that the player had the lowest hits 
     for modeStr in modesData:
         if str(mode) == modeStr:
             country: int = random.randrange(0, len(modesData[modeStr]) - 1)
@@ -99,10 +99,8 @@ def startMode(mode: int):
                     0, len(modesData[modeStr]) - 1)
                 anotherCountryData: Dict[str,
                                          str] = modesData[modeStr][anotherCountry]
-                if anotherCountryData["hits"] > countryData["hits"]:
+                if anotherCountryData["hits"] < countryData["hits"]:
                     countryData = anotherCountryData
-                    print("new country ", countryData["name"])
-                    input()
 
     os.system("cls|clear")
 
