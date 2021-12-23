@@ -1,6 +1,7 @@
 import json
 import random
 import os
+from unidecode import unidecode
 from typing import List, Dict
 from controllers.colors import colors
 
@@ -12,7 +13,6 @@ __contact__ = "tiagossansao@gmail.com"
 
 mode: int
 africa, america, europa, asia, oceania = [], [], [], [], []
-
 
 class PersonalData:
     def __init__(self):
@@ -109,8 +109,8 @@ def startMode(mode: int):
     )
 
     answer: str = str(input(f"{colors.Yellow}Sua resposta: {colors.White}"))
-    isCorrect: bool = str.lower(answer).strip() == str.lower(
-        countryData["capital"]).strip()
+    isCorrect: bool = unidecode(str.lower(answer).strip()) == unidecode(str.lower(
+        countryData["capital"]).strip())
     state: str = colors.Green + \
         "[Correto] " if isCorrect else colors.Red + "[Errado] "
 
